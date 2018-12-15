@@ -1,0 +1,13 @@
+var carRental = {
+     company: "Destiny",
+     location: "Hawaii",
+     cars: 266,
+     sales: 135.75
+     };
+     
+     for( var i in carRental) {
+          console.log(i, carRental[i]);
+     }
+var revenue = carRental.cars * carRental.sales;
+
+console.log("Total revenue of", carRental.company, "in", carRental.location, "is", revenue.toLocaleString('en-us', {style: 'currency', currency: 'USD'}) + ".");
